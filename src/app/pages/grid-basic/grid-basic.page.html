@@ -1,0 +1,155 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nested & Auto Columns</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>Nested Grid</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <div class="box">Parent Column
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <div class="box nested">Nested Column 1</div>
+              </ion-col>
+              <ion-col size="6">
+                <div class="box nested">Nested Column 2</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h2>Auto Columns</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto">
+        <div class="box">Auto</div>
+      </ion-col>
+      <ion-col size="auto">
+        <div class="box">Auto Column with more text</div>
+      </ion-col>
+      <ion-col>
+        <div class="box">Remaining Space</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h2>Horizontal Alignment</h2>
+  <ion-grid>
+    <ion-row class="ion-justify-content-start">
+      <ion-col size="4">
+        <div class="box">Start</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="4">
+        <div class="box">Center</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-end">
+      <ion-col size="4">
+        <div class="box">End</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-around">
+      <ion-col size="3">
+        <div class="box">Around 1</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="box">Around 2</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-between">
+      <ion-col size="3">
+        <div class="box">Between 1</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="box">Between 2</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h2>Vertical Alignment</h2>
+  <ion-grid style="height: 200px; background: #f1f1f1;">
+    <ion-row class="ion-align-items-start" style="height: 100%;">
+      <ion-col>
+        <div class="box">Top Aligned</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-center" style="height: 100%;">
+      <ion-col>
+        <div class="box">Center Aligned</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-end" style="height: 100%;">
+      <ion-col>
+        <div class="box">Bottom Aligned</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Team Members</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <div class="box">Alice</div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="box">Bob</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <div class="box">Charlie</div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="box">Dana</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <strong>Order #</strong>
+          </ion-col>
+          <ion-col size="8">
+            <span>#00123</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="4">
+            <strong>Status</strong>
+          </ion-col>
+          <ion-col size="8">
+            <ion-chip color="success">
+              <ion-label>Delivered</ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
