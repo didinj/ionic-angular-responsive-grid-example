@@ -3,7 +3,7 @@
 This project demonstrates how to use the **Ionic Grid system** with **Ionic 8** and **Angular 19** to build responsive layouts for modern mobile and web apps.
 
 📝 **Tutorial:**  
-Read the full step-by-step article on [Djamware.com]()
+Read the full step-by-step article on [Djamware.com](https://www.djamware.com/post/5dc5571cd68e181b2740cb51/ionic-8-responsive-grid-layout-tutorial-with-angular-19-examples)
 
 ## 🚀 Features
 
